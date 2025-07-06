@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form action="submit" method="post">
+        <fieldset>
+            <legend>User personal information</legend>
+            <label for="firstname"> firstname:</label>
+            <input type="text" id="firstname" name="firstname"required/>
+            <br>
+            <label for="lastname"> lastname:</label>
+            <input type="text" id="lastname" name="lastname"required/>
+            <br>
+            <label for="email"> email:</label>
+            <input type="email" id="email" name="email"required/>
+            <br>
+            <label for="phone"> phone.no:</label>
+            <input type="text" id="phone" name="phone" placeholder="enter phone.no"required/>
+            <br>
+            <label> gender:</label>
+            <div class="gender-group"required>
+                <input type="radio" name="gender" value="male" id="male"/>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female"/>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="other" id="other"/>
+                <label for="other">Other</label>
+            </div>
+            <br>
+            <label for="dob"> date of birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <label for="address"> address:</label>
+            <textarea name="address" id="address"required></textarea>
+            <br>
+            <label for="city"> city:</label>
+            <input type="text" id="city" name="city" placeholder="city name" maxlength="50" required/>
+            <br>
+            <label for="pincode"> pincode:</label>
+            <input type="text" id="pincode" name="pincode" maxlength="6" pattern="\d{6}" required>
+            <br>
+            <label for="state"> state:</label>
+            <input type="text" id="state" name="state" placeholder="state name" maxlength="50"required/>
+            <br>
+            <label for="country"> country:</label>
+            <input type="text" id="country" name="country" placeholder="country name"required/>
+            <br>
+            <label for="hobbies"> hobbies:</label>
+            <div class="hobbies-group">
+               <input type="checkbox" name="hobbies" value="drawing" id="drawing"/>
+               <label for="drawing">drawing</label>
+               <input type="checkbox" name="hobbies" value="singing" id="singing"/>
+               <label for="singing">singing</label>
+               <input type="checkbox" name="hobbies" value="dancing" id="dancing"/>
+               <label for="dancing">dancing</label>
+               <input type="checkbox" name="hobbies" value="sketching" id="sketching"/>
+               <label for="sketching">sketching</label>
+               <input type="checkbox" name="hobbies" value="others" id="others"/>
+               <label for="others">others</label>
+               <input type="text" id="otherHobby" name="otherHobby" maxlength="50" placeholder="specify"/>
+            </div>
+
+            <br>
+            <label for="qualifications"> qualifications:</label>
+            <div class="qualification-group">
+                <input type="checkbox" name="qualifications" value="Highschool(10th)" id="Highschool(10th)"/>
+                <label for="Highschool(10th)">Highschool(10th)</label>
+                <input type="checkbox" name="qualifications" value="Higherschool(12th)" id="Higherschool(12th)"/>
+                <label for="Higherschool(12th)">Higherschool(12th)</label>
+                <input type="checkbox" name="qualifications" value="Graduation(bachelors)" id="Graduation(bachelors)"/>
+                <label for="Graduation(bachelors)">Graduation(bachelors)</label>
+                <input type="checkbox" name="qualifications" value="postGraduation(masters)" id="postGraduation(masters)"/>
+                <label for="postGraduation(masters)">postGraduation(masters)</label>
+                <input type="checkbox" name="qualifications" value="phd" id="phd"/>
+                <label for="phd">phd</label>
+            </div>
+            <br>
+            <label for="coursesApplied "> courses:</label>
+            <div class="coursesApplied-group"required>
+                <input type="checkbox" name="coursesApplied" value="BCA(Bachelor for comp.applicatns)" id="BCA(Bachelor for comp.applicatns)"/>
+                <label for="BCA(Bachelor for comp.applicatns)">BCA(Bachelor for comp.applicatns)</label>
+                <input type="checkbox" name="coursesApplied" value="B.Com(Bachelor of commers)" id="B.Com(Bachelor of commers)"/>
+                <label for="B.Com(Bachelor of commers)">B.Com(Bachelor of commers)</label>
+                <input type="checkbox" name="coursesApplied" value="B.Sc(Bachelor of science)" id="B.Sc(Bachelor of science)"/>
+                <label for="B.Sc(Bachelor of science)">B.Sc(Bachelor of science)</label>
+                <input type="checkbox" name="coursesApplied" value="BA(Bachelor of Arts)" id="BA(Bachelor of Arts)"/>
+                <label for="BA(Bachelor of Arts)">BA(Bachelor of Arts)</label>
+                <input type="checkbox" name="coursesApplied" value="MCA(Master of computer applicatns)" id="MCA(Master of computer applicatns)"/>
+                <label for="MCA(Master of computer applicatns)">MCA(Master of computer applicatns)</label>
+                <input type="checkbox" name="coursesApplied" value="M.Com(Master of commerce)" id="M.Com(Master of commerce)"/>
+                <label for="M.Com(Master of commerce)">M.Com(Master of commerce)</label>
+                <input type="checkbox" name="coursesApplied" value="M.SC(Master of science)" id="M.SC(Master of science)"/>
+                <label for="M.SC(Master of science)">M.SC(Master of science)</label>
+                <input type="checkbox" name="coursesApplied" value="MA(Master of arts)" id="MA(Master of arts)"/>
+                <label for="MA(Master of arts)">MA(Master of arts)</label>
+            </div>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+            
+              
+        </fieldset>
+
+    </form>
+    <script src="forms.js"></script>
+</body>
+</html>
